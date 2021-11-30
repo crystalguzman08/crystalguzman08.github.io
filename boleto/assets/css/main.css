@@ -1,0 +1,200 @@
+html {
+  font-family: "Nunito Sans", sans-serif;
+  color: black;
+}
+a {
+  text-decoration: none; /* Para la linea abajo de los links */
+  color: #fd7400;
+}
+
+img {
+  max-width: 100%;
+}
+
+a.hover {
+  opacity: 0.4;
+}
+
+.title {
+  text-transform: uppercase; /* Para poner las letras en mayuscula */
+  text-align: center;
+}
+
+.container {
+  background: #b79891; /* Respaldo */
+  background: -webkit-linear-gradient(to right, #94716b, #b79891);
+  background: linear-gradient(to right, #94716b, #b79891);
+
+  height: 100vh; /* Dimension al container */
+
+  /* Para que el content tenga posicion */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  max-width: 960px;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 4px 3px 19px rgba(0, 0, 0, 0.29);
+  border-radius: 20px;
+  position: relative;
+  padding: 1.4em;
+  overflow: scroll; /* Desbordamiento de la pagina */
+}
+
+.content {
+  padding: 1em;
+}
+td {
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1) {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+th {
+  display: none;
+}
+
+.actions {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close {
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #004358;
+  display: inline-block; /* Para que tome los valores que ajustamos */
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.29);
+  font-weight: 300;
+
+  /* Centrar el contenido */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paragraph {
+  line-height: 1.8em;
+  font-weight: 300;
+  text-align: justify;
+}
+.fa-star {
+  color: #ffc400;
+}
+.fa-star-half-alt {
+  color: #ffc400;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table td,
+.table th {
+  padding: 1em;
+  text-align: center;
+}
+
+.table tr:nth-child(even) {
+  background-color: #c6d38c;
+  opacity: 0.8;
+}
+
+.title-item {
+  /*border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #2193b0;*/
+  font-size: 1.5em;
+  border-bottom: solid 2px #1f8a70;
+  padding-bottom: 1em;
+  /*shorthand properties*/
+  /*padding: arriba derecha abajo izquierda*/
+  /*padding: arriba/abajo derecha/izquierda*/
+}
+
+.subtitle {
+  font-weight: bold;
+  color: #004358;
+  font-size: 1.2em;
+  margin-top: 1em;
+  text-align: center;
+}
+.main-image {
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+}
+.position {
+  background-color: #1f8a70;
+  color: white;
+  padding: 0.5em;
+  /*
+    border-radius: 2em 2em 2em 2em;
+    border-top-right-radius: 2em;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    */
+  border-radius: 19px;
+  margin-right: 0.5em;
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.29);
+}
+
+@media (min-width: 900px) {
+  td {
+    display: table-cell;
+  }
+
+  td {
+    width: auto;
+    display: table-cell;
+  }
+
+  td:nth-of-type(1) {
+    font-size: 1em;
+  }
+  .content {
+    padding: 1.8em;
+    overflow: hidden;
+  }
+}
+@media (min-height: 550px) {
+  .content {
+    height: 500px;
+  }
+}
+/*
+  @media(max-width:600px){
+      .content{
+      padding: 1em;
+      }
+      td{
+        display: block;
+        width: 100%;
+      }
+      td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+        color: black;
+      }
+      th{
+        display:none;
+      }
+  }
+  @media (min-height:550px){
+    .content{
+      height: 500px;
+    }
+  
+  }
+  */
